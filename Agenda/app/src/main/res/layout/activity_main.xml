@@ -13,8 +13,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_margin="26dp"
-       
-        app:srcCompat="@android:drawable/ic_input_add" />
+        android:src="@drawable/ic_action_novo_aluno_white"
+         />
 
     <ListView
         android:id="@+id/activity_main_lista_alunos"

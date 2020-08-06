@@ -1,21 +1,20 @@
-package com.example.agenda
+package com.example.agenda.ui
 
 import android.annotation.SuppressLint
-import android.app.Activity
-import android.os.Bundle
-import android.view.View
-import android.widget.*
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_main.view.*
 
-class MainActivity: Activity() {
+import android.os.Bundle
+
+import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
+import com.example.agenda.R
+
+class MainActivity: AppCompatActivity() {
 
     @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        setTitle("Lista de Alunos")
         setContentView(R.layout.activity_main)
-        //request api
 
         var alunos = mutableListOf<String>("Jorge Adriano Lindoso", "Anderson Felipe", "Bruno Ananias")
 
