@@ -15,6 +15,8 @@ class MainActivity: Activity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_main)
+        //request api
+
         var alunos = mutableListOf<String>("Jorge Adriano Lindoso", "Anderson Felipe", "Bruno Ananias")
 
 
