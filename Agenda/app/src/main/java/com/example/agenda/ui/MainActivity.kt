@@ -21,10 +21,13 @@ class MainActivity: AppCompatActivity() {
         setTitle("Lista de Alunos")
         setContentView(R.layout.activity_main)
 
+    }
+
+
+    override fun onResume() {
+        super.onResume()
+
         var alunos = AlunoDAO.getDados()
-
-
-
 
         var adapterAlunos = ArrayAdapter<Aluno>(this,  android.R.layout.simple_expandable_list_item_1, alunos)
 
@@ -34,7 +37,6 @@ class MainActivity: AppCompatActivity() {
         activity_main_fab_novo_aluno.setOnClickListener(View.OnClickListener {
             startActivity(Intent(this, FormularioAlunoActivity::class.java))
         })
-
 
     }
 
